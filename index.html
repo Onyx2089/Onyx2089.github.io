@@ -7,13 +7,36 @@
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    /* Personnalisation du style */
-    /* Ajoute ici tes propres styles CSS pour personnaliser la mise en page */
+    /* Styles personnalisés */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    /* Modifier ici les couleurs et les styles pour correspondre à tes préférences */
+    .navbar {
+      background-color: #fff;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    section {
+      padding: 60px 0;
+    }
+    h2 {
+      color: #007bff;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
   </style>
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
       <a class="navbar-brand" href="#">Mon Portfolio</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +45,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#about">À propos</a>
+            <a class="nav-link" href="#about">À Propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Compétences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Éducation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Expérience</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#projects">Projets</a>
@@ -35,57 +67,136 @@
     </div>
   </nav>
 
-  <section id="about" class="py-5">
+  <section id="about">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-8 mx-auto text-center">
           <h2>À Propos de Moi</h2>
-          <p>Insère ici une brève description de toi-même et de tes compétences.</p>
-        </div>
-        <div class="col-lg-6">
-          <!-- Tu peux ajouter une image ici -->
-          <!-- <img src="chemin/vers/ton/image.jpg" alt="Ton Image" class="img-fluid"> -->
+          <p>Insère ici une description détaillée de toi-même, de ton parcours et de tes passions.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="py-5 bg-light">
+  <section id="skills" class="bg-light">
     <div class="container">
-      <h2 class="text-center mb-4">Mes Projets</h2>
       <div class="row">
-        <div class="col-md-4 mb-3">
-          <div class="card">
-            <img src="https://via.placeholder.com/300" alt="Project 1" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Projet 1</h5>
-              <p class="card-text">Description du projet 1.</p>
-              <a href="#" class="btn btn-primary">En savoir plus</a>
+        <div class="col-lg-8 mx-auto text-center">
+          <h2>Compétences</h2>
+          <p>Liste tes compétences clés et les outils que tu maîtrises.</p>
+          <div class="row">
+            <div class="col-md-4">
+              <h4>Compétence 1</h4>
+              <p>Description de la compétence</p>
             </div>
+            <div class="col-md-4">
+              <h4>Compétence 2</h4>
+              <p>Description de la compétence</p>
+            </div>
+            <div class="col-md-4">
+              <h4>Compétence 3</h4>
+              <p>Description de la compétence</p>
+            </div>
+            <!-- Ajoute d'autres compétences -->
           </div>
         </div>
-        <!-- Ajoute d'autres cartes pour tes projets -->
       </div>
     </div>
   </section>
 
-  <section id="contact" class="py-5">
+  <section id="education">
     <div class="container">
-      <h2 class="text-center mb-4">Contact</h2>
       <div class="row">
-        <div class="col-md-6 mx-auto">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2>Éducation</h2>
+          <p>Liste ton parcours académique.</p>
+          <div class="row">
+            <div class="col-md-6">
+              <h4>Diplôme 1</h4>
+              <p>Description du diplôme obtenu</p>
+            </div>
+            <div class="col-md-6">
+              <h4>Diplôme 2</h4>
+              <p>Description du diplôme obtenu</p>
+            </div>
+            <!-- Ajoute d'autres expériences éducatives -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2>Expérience Professionnelle</h2>
+          <p>Liste ton expérience de travail pertinente.</p>
+          <div class="row">
+            <div class="col-md-6">
+              <h4>Entreprise 1</h4>
+              <p>Description du poste et des responsabilités</p>
+            </div>
+            <div class="col-md-6">
+              <h4>Entreprise 2</h4>
+              <p>Description du poste et des responsabilités</p>
+            </div>
+            <!-- Ajoute d'autres expériences professionnelles -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2>Mes Projets</h2>
+          <p>Décris tes projets précédents avec des liens vers des démonstrations ou des détails supplémentaires.</p>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Project 1" class="card-img-top">
+                <div class="card-body">
+                  <h4 class="card-title">Projet 1</h4>
+                  <p class="card-text">Description du projet 1.</p>
+                  <a href="#" class="btn btn-primary">Détails</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Project 2" class="card-img-top">
+                <div class="card-body">
+                  <h4 class="card-title">Projet 2</h4>
+                  <p class="card-text">Description du projet 2.</p>
+                  <a href="#" class="btn btn-primary">Détails</a>
+                </div>
+              </div>
+            </div>
+            <!-- Ajoute d'autres cartes pour tes projets -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2>Contact</h2>
+          <p>Contacte-moi pour toute question ou opportunité.</p>
           <form>
             <div class="form-group">
-              <label for="name">Nom</label>
-              <input type="text" class="form-control" id="name" placeholder="Ton Nom">
+              <input type="text" class="form-control" placeholder="Ton Nom">
             </div>
             <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Ton Email">
+              <input type="email" class="form-control" placeholder="Ton Email">
             </div>
             <div class="form-group">
-              <label for="message">Message</label>
-              <textarea class="form-control" id="message" rows="5" placeholder="Ton Message"></textarea>
+              <textarea class="form-control" rows="5" placeholder="Ton Message"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Envoyer</button>
           </form>
